@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-home-grid',
   standalone: false,
   templateUrl: './home-grid.component.html',
-  styleUrl: './home-grid.component.css'
+  styleUrl: '../app.component.css',
 })
 export class HomeGridComponent {
-
+  heading: string = 'Namitha Burnapelly';
+  subheading: string = 'Full-Stack Developer & Fiber Artist';
 }

@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-work-grid',
   standalone: false,
   templateUrl: './work-grid.component.html',
-  styleUrl: './work-grid.component.css'
+  styleUrl: '../app.component.css',
 })
 export class WorkGridComponent {
-
+  heading: string = 'Work Experience';
+  subheading: string = "Here are the places I've worked";
 }

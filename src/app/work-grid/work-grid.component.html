@@ -1,1 +1,75 @@
-<p>work-grid works!</p>
+<div
+  class="grid grid-cols-1 md:grid-cols-9 md:grid-rows-9 w-full h-full p-5 gap-5 bg-stone-200"
+>
+  <div class="popIn-animation md:row-span-3 md:col-span-5" style="--i: 1">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#F5935E] w-full h-full border border-b-black"
+    ></div>
+  </div>
+  <div class="popIn-animation md:row-span-3 md:col-span-4" style="--i: 2">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#a378ac] w-full h-full border border-b-black"
+    ></div>
+  </div>
+  <div class="popIn-animation md:row-span-6 md:col-span-3" style="--i: 4">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#118c8c] w-full h-full border border-b-black"
+    ></div>
+  </div>
+  <!-- Heading -->
+  <div
+    class="popIn-animation row-start-1 md:row-span-3 md:col-span-3"
+    style="--i: 0"
+  >
+    <a routerLink="/">
+      <div
+        style="transform: none"
+        class="relative bg-[#BF2A52] w-full h-full border border-b-black flex flex-col justify-center items-center gap-3 p-9"
+      >
+        <div
+          class="bg-[#F2E9CE] hover:scale-105 transition-all border border-b-black w-fit text-center px-5 py-3 md:py-2 lg:py-2"
+        >
+          <span
+            class="text-4xl text-[#BF2A52] font-bold md:text-3xl lg:text-4xl"
+          >
+            <app-typewriter id="home" [fullText]="heading"></app-typewriter>
+            <span
+              class="inline-block h-[3px] w-5 bg-[#ae1f45] animate-pulse"
+            ></span>
+          </span>
+        </div>
+        <div
+          class="bg-[#F2E9CE] border border-b-black text-center w-fit px-7 py-2 font-medium md:py-1 lg:py-2"
+        >
+          <span class="md:text-md text-[#BF2A52]">
+            <app-typewriter [fullText]="subheading"></app-typewriter>
+            <span
+              class="inline-block h-0.5 w-3 bg-[#ae1f45] animate-pulse"
+            ></span>
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="popIn-animation md:row-span-3 md:col-span-3" style="--i: 3">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#118c8c] w-full h-full border border-b-black"
+    ></div>
+  </div>
+  <div class="popIn-animation md:row-span-3 md:col-span-4" style="--i: 4">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#a378ac] w-full h-full border border-b-black"
+    ></div>
+  </div>
+  <div class="popIn-animation md:row-span-3 md:col-span-2" style="--i: 4">
+    <div
+      style="transform: scale(1)"
+      class="relative bg-[#F5935e] w-full h-full border border-b-black"
+    ></div>
+  </div>
+</div>

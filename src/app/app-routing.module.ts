@@ -5,7 +5,7 @@ import { WorkGridComponent } from './work-grid/work-grid.component';
 import { ProjectsGridComponent } from './projects-grid/projects-grid.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeGridComponent },
+  { path: '', component: HomeGridComponent, pathMatch: 'full' },
   { path: 'work', component: WorkGridComponent },
   { path: 'projects', component: ProjectsGridComponent },
 ];

@@ -1,0 +1,12 @@
+.popIn-animation {
+  transform: scale(0);
+  animation: popIn 0.7s cubic-bezier(0.35, 0, 0.25, 1) forwards;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+/* Cubic Bézier curves give fine control over the timing of animations. */
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
